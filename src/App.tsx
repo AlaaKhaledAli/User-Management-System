@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Sidebar from './Components/Shared/Sidebar/Sidebar'
 import Login from './Components/Login/Login'
-import Navbar from './Components/Shared/Navbar/Navbar'
 import UsersList from './Components/UsersList/UsersList'
 import UserData from './Components/UserData/UserData'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AuthLayout from './Components/Shared/AuthLayout/AuthLayout'
 import MasterLayout from './Components/Shared/MasterLayout/MasterLayout'
 import UserProfile from './Components/UserProfile/UserProfile'
+import { ToastContainer, toast } from 'react-toastify';
+import AddUser from './Components/addUser/AddUser'
+
 
 function App() {
+  const notify = () => toast('Wow so easy !');
   const routes = createBrowserRouter(
     [{
       path:'',
@@ -28,7 +28,8 @@ function App() {
     children:[
       {index:true,element:<UsersList/>},
       {path:'user-list',element:<UsersList/>},
-      {path:'user-list',element:<UsersList/>},
+      {path:'user-add',element:<AddUser/>},
+      {path:'user-add/:id',element:<AddUser/>},
       {path:'user-data',element:<UserData/>},
       {path:'user-profile',element:<UserProfile/>},
     ]
@@ -38,6 +39,7 @@ function App() {
   return (
     <>
     <RouterProvider router={routes}></RouterProvider>
+      <ToastContainer />
     </>
   )
 }

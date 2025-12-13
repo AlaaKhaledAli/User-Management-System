@@ -1,3 +1,12 @@
 .Auth-Container{
     background: linear-gradient( to right,#FEAF00,#F8D442);
 }
+
+.sidebar-col,.sidebar-col *{
+    background-color:#F2EAE1 !important;
+    transition: all 0.3s ease-in;
+}
+.sidebar-col .ps-menu-button:hover ,.ps-menu-button:hover *{
+    background: #FEAF00 !important;
+    border-radius: 5px;
+}
