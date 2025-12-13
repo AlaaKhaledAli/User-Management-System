@@ -45,7 +45,7 @@ export default function AddUser() {
         <h1>{pageDetails.pageTitle}</h1>
         <div className="row justify-content-center">
           <div className="col-lg-9 col-11 mt-5 " onSubmit={handleSubmit(onSubmit)}>
-            <form className="bg-white py-5 rounded-3 shadow">
+            <form className="bg-white py-5 rounded-3 shadow m-1 px-3 m-md-0">
               <div className="row justify-content-center gap-3">
                 <div className="col-lg-5">
                   <div className="mb-3">
