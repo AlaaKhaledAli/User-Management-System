@@ -57,7 +57,7 @@ export default function UsersList() {
           </div>
           <div className="col-3 align-self-center">
             <Link to='/home/user-add' className='text-decoration-none'>
-            <div className="bg-warning text-center rounded-3 text-white w-75 mx-auto h4 py-3">Add User</div>
+            <div className="bg-warning text-center rounded-3 text-white w-75 mx-auto h4 py-3 ">Add User</div>
             </Link>
           </div>
         </div>

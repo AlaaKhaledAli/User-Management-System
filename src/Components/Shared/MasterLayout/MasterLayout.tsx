@@ -12,7 +12,7 @@ export default function MasterLayout() {
           <SideBar/>
         </div>
         <div className="col-md-9 flex-grow-1 align-items-stretch col-12 bg-light">
-          <Navbar/>
+          {/* <Navbar/> */}
           <Outlet/>
         </div>
       </div>

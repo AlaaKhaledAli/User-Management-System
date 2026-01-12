@@ -15,7 +15,7 @@ export default function SideBar() {
   let {loginData}=useContext(AuthContext);
   return (
     <>
-      <Sidebar collapsed={isCollapsed} className='px-2 my-5'>
+      <Sidebar collapsed={isCollapsed} className='px-sm-2 my-5 mx-auto' breakPoint='md' width='300px'  collapsedWidth="80px">
         <Menu>
           <div className="d-flex px-4 justify-content-between align-items-center w-100 flex-wrap">
         <h1 className={`${isCollapsed?"p-0 fs-6":"ps-3"} border-start border-warning border-3`}>UMS</h1>
